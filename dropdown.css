@@ -9,7 +9,6 @@ ul {
 	padding: 0;
 }
 
-
 .langNav {
 	list-style-type: none;
 	margin: 0;
@@ -20,6 +19,7 @@ ul {
 }
 
 .langNav__title {
+	position: relative;
 	padding: 15px;
 	background: #2d2f31;
 	color: white;
@@ -27,6 +27,15 @@ ul {
 	font-variant: small-caps;
 	cursor: pointer;
 	display: block;
+}
+
+.title__svg {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+    top: 15px;
+    right: 35px;
+
 }
 
 .langNav__title::after {
@@ -48,22 +57,22 @@ ul {
 }
 
 .langNav__item {
+	position: relative;
 	padding: 20px 0 20px 15px;
 }
 
 .langNav__link {
-    position: relative;
+	position: relative;
 	text-decoration: none;
 	color: black;
 }
 
 .langNav__svg {
-    position: absolute;
+	position: absolute;
 	height: 25px;
 	width: 25px;
-    top: -5px;
-    left: 65px;
-
+	top: -5px;
+	left: 65px;
 }
 
 #touch {
